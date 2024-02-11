@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Description" content="Distributore carte Lupus">
+    <meta name="author" content="Lorenzo Mugnai">
+    <meta name="Keywords" content="Gioca a Lupus">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1.0">
+    <title>Gioco Guerra dei Pinguini</title>
+    <link rel="stylesheet" href="gioca.css" type="text/css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="container-nav-bar">
+        <ul id="menu-primary">
+            <img id="logo" class="image">
+        </ul>
+        <ul id="menu-secondary">
+            <li><a href="./index.html" title="Home">Home</a></li>
+            <li><a href="./regole.html" title="Regolamento">Regolamento</a></li>
+            <li><a href="./gioca.html" title="gioca">Gioca</a></li>
+        </ul>
+        <a href="./#" class="toggle-menu"><span></span></a>
+    </div>
+</nav>
+<h1 class="squad1" id="squad1">Ha vinto la squadra 2</h1>
+<h1 class="squad2" id="squad2">Ha vinto la squadra 1</h1>
+<div class="images">
+    <div class="flex">
+        <img src="squad1.svg" class="squad1_1" id="squad1_1" onclick="s1_1()">
+        <img src="squad1.svg" class="squad1_2" id="squad1_2" onclick="s1_2()">
+        <img src="squad1.svg" class="squad1_3" id="squad1_3" onclick="s1_3()">
+    </div>
+    <div class="flex">
+        <img src="squad2.svg" class="squad2_1" id="squad2_1" onclick="s2_1()">
+        <img src="squad2.svg" class="squad2_2" id="squad2_2" onclick="s2_2()">
+        <img src="squad2.svg" class="squad2_3" id="squad2_3" onclick="s2_3()">
+    </div>
+</div>
+<script src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+
+:root {
+    /* COLOR */
+    /*--background: #2F4858;*/
+    --background: #00310D;
+    --white: #ffffff;
+    --red-background: #2d0305;
+    --red-background-dis: #ffffff;
+
+    /* FONT */
+    --font-family-franklin: 'Libre Franklin', Helvetica, sans-serif;
+    --font-family-georgia: Georgia, 'Times New Roman', serif;
+    --font-family-fiorina: Fiorina;
+
+    /* FONT SIZE*/
+    --font-size-xxxxs: 0.75rem;
+    --font-size-xxxs: 0.875rem;
+    --font-size-xxs: 1rem;
+    --font-size-xs: 1.125rem;
+    --font-size-small: 1.125rem;
+    --font-size-medium: 1.25rem;
+    --font-size-medium-variant: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.5rem;
+    --font-size-xxxl: 2.75rem;
+    --font-size-xxxxl: 3rem;
+}
+
+body{
+    text-align: center;
+    background-image: url("arena.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 100vh;
+}
+.titolo{
+    color:red;
+    padding-top: 80px;
+}
+.sottotitolo{
+    color:green;
+
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    /*background-color: var(--background);*/
+    font-family: var(--font-family-franklin);
+    font-family: var(--font-family-franklin);
+    font-size: var(--font-size-xxxs);
+    height: 80px;
+    font-weight: 700;
+}
+
+.container-nav-bar {
+    width: 98%;
+    margin: 0 auto;
+    height: 80px;
+    position: relative;
+    display: flex;
+}
+
+.white{
+    color: white;
+}
+
+#menu-primary, #menu-secondary, #menu-tertiary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-primary {
+    min-width: 20%;
+}
+
+#menu-primary .image {
+    height: 105px;
+}
+
+#menu-secondary {
+    margin-left: -80px;
+    width: 60%;
+    list-style-type: none;
+}
+
+#menu-secondary a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: var(--font-size-medium);
+    font-family: var(--font-family-franklin);
+}
+
+#menu-secondary a:first-child {
+    padding-right: 50px;
+}
+
+#logo {
+    content: url("logo.png");
+}
+
+.arena{
+    padding-top: 100px;
+    height: 700px;
+}
+
+.squad1_1{
+    position: relative;
+    top: 100px;
+    /*left: 800px;*/
+    height: 100px;
+    /*top: 10px;*/
+}
+.squad1_2{
+    position: relative;
+    top: 106px;
+    /*left: 900px;*/
+    height: 150px;
+}
+.squad1_3{
+    position: relative;
+    top: 106px;
+    /*left: 1000px;*/
+    height: 100px;
+}
+
+.squad2_1{
+    position: relative;
+    top: -146px;
+    /*left: 800px;*/
+    height: 130px;
+}
+.squad2_2{
+    position: relative;
+    top: -146px;
+    /*left: 900px;*/
+    height: 150px;
+}
+.squad2_3{
+    position: relative;
+    top: -146px;
+    height: 130px;
+}
+
+.squad1{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    margin-top: 200px;
+    background: white;
+    display: none;
+}
+
+
+.squad2{
+    /*position: absolute;*/
+    width: 100%;
+    height: 50%;
+    margin-top: 200px;
+    background: white;
+    display: none;
+}
+
+@media only screen and (max-width: 777px) {
+    #menu-secondary {
+        padding-left: 10%;
+    }
+
+    #menu-secondary a:first-child {
+        padding-right: 30px;
+    }
+
+    #menu-secondary a {
+        font-size: var(--font-size-small)!important;
+    }
+    #logo {
+        display: none;
+    }
+}
+
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.flex{
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    width: 100%;
+    margin: 0;
+    /*height: 50px;*/
+}
+@media only screen and (max-width: 777px) {
+    .squad1_1{
+        height: 70px;
+    }
+    .squad1_2{
+        height: 90px;
+    }
+    .squad1_3{
+        height: 70px;
+    }
+
+    .squad2_1{
+        height: 70px;
+    }
+    .squad2_2{
+        height: 90px;
+    }
+    .squad2_3{
+        height: 70px;
+    }
+}
